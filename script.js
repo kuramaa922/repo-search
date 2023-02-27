@@ -50,17 +50,22 @@ function deleteAutoComplete() {
 function createRepoInfo(obj) {
   let box = document.createElement("div")
   box.classList.add("boxInfo")
+
   let div = document.createElement("div")
   box.append(div)
+
   let name = document.createElement("p")
   let login = document.createElement("p")
   let stars = document.createElement("p")
   name.textContent = `name: ${ obj.name }`
   div.appendChild(name)
+
   login.textContent = `owner: ${ obj.owner.login }`
   div.appendChild(login)
+
   stars.textContent = `stars: ${ obj.stargazers_count }`
   div.appendChild(stars)
+
   let btn = document.createElement("button")
   btn.textContent = "X"
   btn.classList.add("deleteBtn")
