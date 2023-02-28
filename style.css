@@ -20,9 +20,10 @@ main {
 	padding: 10px;
 	width: 100%;
 	border: none;
-	font-size: 1em;
+	font-size: 1.4em;
+	font-weight: 500;
 	font-family: monospace, sans-serif;
-	color: rgb(178, 172, 172);
+	color: #000;
 	border-bottom: solid 1px #000000;
 }
 
