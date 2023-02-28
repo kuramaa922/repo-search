@@ -2,6 +2,8 @@ const input = document.querySelector(".input")
 const listBox = document.querySelector(".box")
 const infoBox = document.querySelector(".info-box")
 
+// --------------------------- 
+
 let filteredArr = []
 
 
@@ -12,8 +14,8 @@ const getRepos = async (e) => {
   if (val.length === 0) return
 
   const url = `https://api.github.com/search/repositories?q=${ val }&per_page=5`
-  const res = await fetch(url)
-  const data = await res.json()
+  const result = await fetch(url)
+  const data = await result.json()
   filteredArr = data.items
 
 
